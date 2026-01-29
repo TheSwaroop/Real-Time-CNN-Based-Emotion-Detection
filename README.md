@@ -128,13 +128,6 @@ The system is deployed as a **Streamlit web application** that allows real-time 
 
 ---
 
-## ☁️ Model Deployment & Artifact Management  
-- Trained model is stored in **cloud storage (Google Drive)**  
-- Application dynamically downloads the model at runtime using `gdown`  
-- This simulates a **cloud-based ML deployment workflow**, similar to enterprise data platforms  
-
----
-
 ## 🛠️ Tech Stack  
 **Programming Language:**  
 - Python  
@@ -148,22 +141,13 @@ The system is deployed as a **Streamlit web application** that allows real-time 
 **Web Framework:**  
 - Streamlit  
 
-**Utilities:**  
-- PIL (Image Processing)  
-- gdown (Cloud Model Download)  
-
 ---
 
 ## 📂 Project Structure  
 ```text
 Real-Time-CNN-Based-Emotion-Detection/
 │
-├── model/
-│   └── my_model.keras               # Trained CNN model (downloaded at runtime)
-│
-├── app.py                          # Streamlit web application
 ├── RealTimeEmotionDetection.ipynb # Model training and experimentation notebook
 ├── workflow.pdf                   # System workflow diagram
 ├── ML project.pptx               # Project presentation
-├── requirements.txt              # Python dependencies
 └── README.md                     # Project documentation
